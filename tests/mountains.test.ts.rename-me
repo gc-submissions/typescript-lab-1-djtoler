@@ -1,6 +1,7 @@
 import { findNameOfTallestMountain } from "../src/mountains";
 
 describe("findNameOfTallestMountain", () => {
+
   test("middle mountain", () => {
     const name = findNameOfTallestMountain([
       { name: "Kilimanjaro", height: 19341 },
@@ -9,6 +10,7 @@ describe("findNameOfTallestMountain", () => {
     ]);
     expect(name).toBe("Everest");
   });
+
   test("first mountain", () => {
     const name = findNameOfTallestMountain([
       { name: "Everest", height: 29029 },
@@ -17,6 +19,7 @@ describe("findNameOfTallestMountain", () => {
     ]);
     expect(name).toBe("Everest");
   });
+  
   test("last mountain", () => {
     const name = findNameOfTallestMountain([
       { name: "Kilimanjaro", height: 19341 },
